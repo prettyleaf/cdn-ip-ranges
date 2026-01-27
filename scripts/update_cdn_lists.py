@@ -3,9 +3,11 @@
 from __future__ import annotations
 
 import csv
+import gzip
 import ipaddress
 import json
 import os
+import struct
 import sys
 import time
 from dataclasses import dataclass
@@ -252,6 +254,36 @@ def write_amnezia_ipv4_json(path: Path, prefixes: Sequence[PrefixEntry]) -> None
     path.write_text(json.dumps(payload, indent=2) + "\n", encoding="utf-8")
 
 
+def write_mrs_ipv4(path: Path, prefixes: Sequence[PrefixEntry]) -> None:
+    """Write Mihomo Rule Set (MRS) binary format for IPv4 prefixes.
+    
+    MRS format:
+    - Header: "MRSX" magic + behavior byte (0x00=domain, 0x01=ipcidr, 0x02=classical)
+    - Body: gzip-compressed list of CIDR entries
+    - Each CIDR: 4-byte IP address + 1-byte prefix length
+    """
+    # Build binary payload for IPv4 CIDRs
+    cidr_data = bytearray()
+    for entry in prefixes:
+        network = ipaddress.ip_network(entry.cidr, strict=False)
+        if network.version != 4:
+            continue
+        # Pack as 4 bytes for IPv4 address + 1 byte for prefix length
+        ip_bytes = network.network_address.packed
+        prefix_len = network.prefixlen
+        cidr_data.extend(ip_bytes)
+        cidr_data.append(prefix_len)
+    
+    # Compress the CIDR data with gzip
+    compressed = gzip.compress(bytes(cidr_data), compresslevel=9)
+    
+    # Write MRS file: magic "MRSX" + behavior (0x01 for ipcidr) + compressed data
+    with path.open("wb") as f:
+        f.write(b"MRSX")  # Magic bytes
+        f.write(struct.pack("B", 0x01))  # Behavior: ipcidr
+        f.write(compressed)
+
+
 def write_provider_outputs(provider: str, prefixes: Sequence[PrefixEntry]) -> None:
     provider_dir = REPO_ROOT / provider
     provider_dir.mkdir(parents=True, exist_ok=True)
@@ -265,10 +297,12 @@ def write_provider_outputs(provider: str, prefixes: Sequence[PrefixEntry]) -> No
     plain_path = provider_dir / f"{provider}_plain.txt"
     plain_ipv4_path = provider_dir / f"{provider}_plain_ipv4.txt"
     amnezia_ipv4_path = provider_dir / f"{provider}_amnezia_ipv4.json"
+    mrs_ipv4_path = provider_dir / f"{provider}_ipv4.mrs"
 
     write_plain(plain_path, prefixes)
     write_plain(plain_ipv4_path, ipv4_prefixes)
     write_amnezia_ipv4_json(amnezia_ipv4_path, ipv4_prefixes)
+    write_mrs_ipv4(mrs_ipv4_path, ipv4_prefixes)
 
 
 def write_all_csv(entries: Sequence[tuple[str, PrefixEntry]]) -> None:
