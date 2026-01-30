@@ -2237,7 +2237,6 @@ akamai,23.204.105.0/24,
 akamai,23.204.108.0/23,
 akamai,23.204.110.0/24,
 akamai,23.204.111.0/24,
-akamai,23.204.112.0/24,
 akamai,23.204.113.0/24,
 akamai,23.204.114.0/24,
 akamai,23.204.115.0/24,
@@ -4514,7 +4513,6 @@ akamai,2600:1408:600::/48,
 akamai,2600:1408:1c00::/48,
 akamai,2600:1408:2000::/48,
 akamai,2600:1408:4800::/48,
-akamai,2600:1408:5000::/48,
 akamai,2600:1408:5400::/48,
 akamai,2600:1408:6400::/48,
 akamai,2600:1408:7400::/48,
@@ -7816,6 +7814,7 @@ aws,18.99.75.128/25,ap-northeast-1
 aws,18.99.96.0/20,eu-north-1
 aws,18.99.112.0/20,us-gov-east-1
 aws,18.99.128.0/20,ca-west-1
+aws,18.99.129.0/25,ca-west-1
 aws,18.99.144.0/20,af-south-1
 aws,18.99.160.0/20,ap-south-2
 aws,18.99.176.0/20,ap-east-1
@@ -8199,6 +8198,7 @@ aws,23.254.8.0/21,ap-southeast-6
 aws,23.254.16.0/21,me-west-1
 aws,23.254.24.0/23,us-west-2
 aws,23.254.120.0/21,sa-west-1
+aws,24.110.0.0/21,GLOBAL
 aws,24.110.16.0/20,us-east-1
 aws,24.110.32.0/19,GLOBAL
 aws,27.0.0.0/22,ap-northeast-1
@@ -8967,7 +8967,6 @@ aws,46.137.0.0/17,eu-west-1
 aws,46.137.128.0/18,eu-west-1
 aws,46.137.192.0/19,ap-southeast-1
 aws,46.137.224.0/19,ap-southeast-1
-aws,46.168.0.0/15,ap-southeast-6
 aws,47.128.0.0/14,ap-southeast-1
 aws,47.128.4.0/22,ap-southeast-1
 aws,47.128.8.0/23,ap-southeast-1
@@ -10447,6 +10446,7 @@ aws,54.25.0.0/21,eu-south-1
 aws,54.25.14.0/24,us-east-1
 aws,54.25.15.0/24,us-east-1
 aws,54.25.20.0/24,us-east-1
+aws,54.25.32.0/19,GLOBAL
 aws,54.25.82.0/24,us-east-1
 aws,54.26.166.0/24,us-east-1
 aws,54.32.0.0/16,ap-northeast-2
@@ -11064,6 +11064,8 @@ aws,69.107.12.0/29,ap-southeast-2
 aws,69.107.12.8/29,ap-southeast-2
 aws,69.107.12.16/29,ap-northeast-1
 aws,69.107.12.24/29,ap-northeast-1
+aws,69.107.12.32/29,eu-west-2
+aws,69.107.12.40/29,eu-west-2
 aws,69.230.192.0/18,cn-northwest-1
 aws,69.230.219.0/24,cn-northwest-1
 aws,69.230.226.0/24,cn-northwest-1
@@ -13248,6 +13250,7 @@ aws,2600:1f01:4806::/47,us-east-1
 aws,2600:1f01:4808::/47,eu-south-1
 aws,2600:1f01:480a::/47,us-west-1
 aws,2600:1f01:480c::/47,us-east-1
+aws,2600:1f01:480e::/47,eu-west-2
 aws,2600:1f01:4810::/47,eu-west-3
 aws,2600:1f01:4814::/47,ap-east-1
 aws,2600:1f01:481a::/47,ap-southeast-3
@@ -13342,6 +13345,7 @@ aws,2600:1f19:4000::/36,us-east-1
 aws,2600:1f19:8000::/36,us-east-1
 aws,2600:1f19:c000::/36,us-east-1
 aws,2600:1f1a:4000::/36,ca-west-1
+aws,2600:1f1a:4040:b100::/56,ca-west-1
 aws,2600:1f1a:4ff6:d500::/56,ca-west-1
 aws,2600:1f1a:8000::/36,us-east-1
 aws,2600:1f1a:c000::/36,us-east-1
@@ -14032,6 +14036,7 @@ aws,2600:f0f0:5402::/48,ap-northeast-2
 aws,2600:f0f0:5500::/48,us-west-2
 aws,2600:f0f0:5502::/48,us-west-2
 aws,2600:f0f0:5503::/48,us-east-1
+aws,2600:f0f0:5504::/46,GLOBAL
 aws,2600:f0f0:5510::/48,us-west-2
 aws,2600:f0f0:5511::/48,us-west-2
 aws,2600:f0f0:5512::/48,us-west-2
@@ -15698,6 +15703,7 @@ cloudflare,23.227.60.0/24,
 cloudflare,31.185.108.0/24,
 cloudflare,37.153.171.0/24,
 cloudflare,38.96.28.0/23,
+cloudflare,45.86.46.0/24,
 cloudflare,45.128.76.0/24,
 cloudflare,45.130.125.0/24,
 cloudflare,45.146.130.0/24,
@@ -15906,6 +15912,8 @@ cloudflare,104.22.43.0/24,
 cloudflare,104.22.44.0/24,
 cloudflare,104.22.47.0/24,
 cloudflare,104.22.48.0/24,
+cloudflare,104.22.51.0/24,
+cloudflare,104.22.52.0/24,
 cloudflare,104.22.60.0/24,
 cloudflare,104.23.160.0/24,
 cloudflare,104.23.161.0/24,
@@ -18648,6 +18656,7 @@ cloudflare,2400:cb00:1233::/48,
 cloudflare,2400:cb00:1235::/48,
 cloudflare,2400:cb00:1243::/48,
 cloudflare,2400:cb00:1255::/48,
+cloudflare,2400:cb00:1264::/48,
 cloudflare,2400:cb00:2049::/48,
 cloudflare,2400:cb00:3006::/48,
 cloudflare,2400:cb00:3007::/48,
@@ -18976,6 +18985,7 @@ cloudflare,2400:cb00:a882::/48,
 cloudflare,2400:cb00:a891::/48,
 cloudflare,2400:cb00:a892::/48,
 cloudflare,2400:cb00:a893::/48,
+cloudflare,2400:cb00:a894::/48,
 cloudflare,2400:cb00:a8f1::/48,
 cloudflare,2400:cb00:a8f2::/48,
 cloudflare,2400:cb00:a941::/48,
@@ -23570,6 +23580,13 @@ cogent,38.213.28.0/24,
 cogent,38.213.29.0/24,
 cogent,38.213.30.0/24,
 cogent,38.213.31.0/24,
+cogent,38.213.33.0/24,
+cogent,38.213.35.0/24,
+cogent,38.213.36.0/24,
+cogent,38.213.38.0/24,
+cogent,38.213.39.0/24,
+cogent,38.213.40.0/24,
+cogent,38.213.41.0/24,
 cogent,38.213.42.0/24,
 cogent,38.213.43.0/24,
 cogent,38.213.44.0/24,
@@ -23615,6 +23632,10 @@ cogent,38.213.124.0/24,
 cogent,38.213.125.0/24,
 cogent,38.213.126.0/24,
 cogent,38.213.127.0/24,
+cogent,38.213.181.0/24,
+cogent,38.213.182.0/24,
+cogent,38.213.183.0/24,
+cogent,38.213.184.0/24,
 cogent,38.213.189.0/24,
 cogent,38.213.190.0/24,
 cogent,38.213.191.0/24,
@@ -24356,7 +24377,6 @@ cogent,66.28.99.0/24,
 cogent,66.71.224.0/20,
 cogent,66.90.110.0/23,
 cogent,66.90.118.0/24,
-cogent,66.92.188.0/24,
 cogent,66.102.96.0/19,
 cogent,66.132.0.0/17,
 cogent,66.227.112.0/22,
@@ -24436,7 +24456,6 @@ cogent,72.14.157.0/24,
 cogent,72.244.2.0/24,
 cogent,72.244.5.0/24,
 cogent,72.244.7.0/24,
-cogent,72.244.206.0/24,
 cogent,72.244.242.0/24,
 cogent,72.244.243.0/24,
 cogent,72.244.245.0/24,
@@ -24522,6 +24541,7 @@ cogent,80.91.68.0/23,
 cogent,80.91.70.0/24,
 cogent,80.91.80.0/24,
 cogent,80.91.82.0/23,
+cogent,80.91.83.0/24,
 cogent,80.91.90.0/24,
 cogent,80.93.0.0/20,
 cogent,80.174.114.0/24,
@@ -27307,7 +27327,6 @@ constant,43.224.32.0/22,
 constant,44.1.2.0/24,
 constant,44.1.3.0/24,
 constant,44.1.8.0/24,
-constant,44.1.9.0/24,
 constant,44.1.10.0/24,
 constant,44.4.44.0/24,
 constant,44.4.51.0/24,
@@ -28803,29 +28822,29 @@ constant,2a0b:64c5::/33,
 constant,2a0b:64c5:8000::/33,
 constant,2a0d:2680:2111::/48,
 constant,2a0d:2680:bf90::/48,
-constant,2a0e:7d45:772c::/48,
 constant,2a0e:7d45:772d::/48,
 constant,2a0e:7d45:772e::/48,
 constant,2a0e:7d45:772f::/48,
 constant,2a0e:7d45:7730::/48,
 constant,2a0e:7d45:7731::/48,
 constant,2a0e:7d45:7732::/48,
+constant,2a0e:7d45:7733::/48,
 constant,2a0e:7d45:77d1::/48,
-constant,2a0e:7d45:77d3::/48,
 constant,2a0e:7d45:77d4::/48,
 constant,2a0e:7d45:77d5::/48,
 constant,2a0e:7d45:77d6::/48,
 constant,2a0e:7d45:77d7::/48,
 constant,2a0e:7d45:77d8::/48,
 constant,2a0e:7d45:77d9::/48,
+constant,2a0e:7d45:77da::/48,
 constant,2a0e:7d45:77e3::/48,
-constant,2a0e:7d45:77e4::/48,
 constant,2a0e:7d45:77e5::/48,
 constant,2a0e:7d45:77e6::/48,
 constant,2a0e:7d45:77e7::/48,
 constant,2a0e:7d45:77e8::/48,
 constant,2a0e:7d45:77e9::/48,
 constant,2a0e:7d45:77ea::/48,
+constant,2a0e:7d45:77eb::/48,
 constant,2a0e:9d40::/32,
 constant,2a0e:b107:df2::/48,
 constant,2a0e:b800:aaaa::/48,
@@ -28843,7 +28862,6 @@ constant,2a0f:6284:4230::/44,
 constant,2a0f:7d00:1::/48,
 constant,2a0f:9400:6166::/48,
 constant,2a0f:9400:6167::/48,
-constant,2a0f:9400:690a::/48,
 constant,2a0f:9400:690b::/48,
 constant,2a0f:9400:8020::/48,
 constant,2a10:ccc1:440::/48,
@@ -28852,6 +28870,7 @@ constant,2a10:ccc1:442::/48,
 constant,2a10:ccc1:443::/48,
 constant,2a10:ccc1:444::/48,
 constant,2a10:ccc1:446::/48,
+constant,2a10:ccc1:447::/48,
 constant,2a10:ccc1:449::/48,
 constant,2a10:ccc1:44a::/48,
 constant,2a10:ccc1:44b::/48,
@@ -28860,6 +28879,7 @@ constant,2a10:ccc1:44d::/48,
 constant,2a10:ccc1:44f::/48,
 constant,2a10:ccc1:450::/48,
 constant,2a10:ccc1:452::/48,
+constant,2a10:ccc1:453::/48,
 constant,2a10:ccc1:454::/48,
 constant,2a10:ccc1:455::/48,
 constant,2a10:ccc1:457::/48,
@@ -28902,6 +28922,7 @@ constant,2a13:1002::/48,
 constant,2a13:5681:a181::/48,
 constant,2a13:9500:61::/48,
 constant,2a13:9500:cf::/48,
+constant,2a14:67c2:1010::/48,
 constant,2a14:7581:fa0::/48,
 constant,2a14:7581:fa1::/48,
 constant,2a14:7581:faf::/48,
@@ -32170,6 +32191,10 @@ datacamp,2a02:e9c2::/32,
 datacamp,2a02:e9c4::/32,
 datacamp,2a02:e9c7::/32,
 datacamp,2a03:efc0:7200::/40,
+datacamp,2a05:1900::/32,
+datacamp,2a05:1902::/32,
+datacamp,2a05:1904::/32,
+datacamp,2a05:1906::/32,
 datacamp,2a05:e9c0:4400::/40,
 datacamp,2a06:b442::/32,
 datacamp,2a06:b443::/32,
@@ -32316,6 +32341,7 @@ datacamp,2a10:9007:4::/48,
 datacamp,2a10:9007:5::/48,
 datacamp,2a10:9007:6::/48,
 datacamp,2a10:aa40::/32,
+datacamp,2a10:aa41::/32,
 datacamp,2a10:aa42::/32,
 datacamp,2a10:aa43::/32,
 datacamp,2a11:2f40::/32,
@@ -33911,6 +33937,7 @@ fastly,151.101.80.0/22,
 fastly,151.101.84.0/22,
 fastly,151.101.88.0/22,
 fastly,151.101.92.0/22,
+fastly,151.101.104.0/22,
 fastly,151.101.108.0/22,
 fastly,151.101.112.0/22,
 fastly,151.101.116.0/22,
@@ -34468,6 +34495,8 @@ fastly,2a04:4e40:3a10::/48,
 fastly,2a04:4e40:3a40::/44,
 fastly,2a04:4e40:3a40::/48,
 fastly,2a04:4e40:3af0::/48,
+fastly,2a04:4e40:3b00::/44,
+fastly,2a04:4e40:3b00::/48,
 fastly,2a04:4e40:3c00::/48,
 fastly,2a04:4e40:3c10::/44,
 fastly,2a04:4e40:3c10::/48,
@@ -34550,6 +34579,8 @@ fastly,2a04:4e40:5240::/48,
 fastly,2a04:4e40:52f0::/48,
 fastly,2a04:4e40:5400::/44,
 fastly,2a04:4e40:5400::/48,
+fastly,2a04:4e40:5500::/44,
+fastly,2a04:4e40:5500::/48,
 fastly,2a04:4e40:5700::/48,
 fastly,2a04:4e40:5800::/48,
 fastly,2a04:4e40:5810::/48,
@@ -34640,6 +34671,7 @@ fastly,2a04:4e40:7400::/48,
 fastly,2a04:4e40:7500::/48,
 fastly,2a04:4e40:7700::/48,
 fastly,2a04:4e40:7710::/48,
+fastly,2a04:4e40:7720::/48,
 fastly,2a04:4e40:7740::/48,
 fastly,2a04:4e40:7800::/48,
 fastly,2a04:4e40:7830::/48,
@@ -34927,6 +34959,7 @@ fastly,2a04:4e40:eaf1::/48,
 fastly,2a04:4e40:ec00::/48,
 fastly,2a04:4e40:ec20::/44,
 fastly,2a04:4e40:ec20::/48,
+fastly,2a04:4e40:ec40::/44,
 fastly,2a04:4e40:ec40::/48,
 fastly,2a04:4e40:ecf0::/48,
 fastly,2a04:4e40:ee00::/48,
@@ -35149,6 +35182,7 @@ fastly,2a04:4e42:13::/48,
 fastly,2a04:4e42:14::/48,
 fastly,2a04:4e42:15::/48,
 fastly,2a04:4e42:16::/48,
+fastly,2a04:4e42:19::/48,
 fastly,2a04:4e42:1a::/48,
 fastly,2a04:4e42:1b::/48,
 fastly,2a04:4e42:1c::/48,
@@ -37237,7 +37271,6 @@ ovh,151.246.190.0/24,
 ovh,151.247.192.0/24,
 ovh,151.247.217.0/24,
 ovh,152.228.128.0/17,
-ovh,155.117.119.0/24,
 ovh,155.117.212.0/23,
 ovh,157.254.30.0/24,
 ovh,158.69.0.0/16,
@@ -37366,6 +37399,7 @@ ovh,198.245.48.0/20,
 ovh,199.48.178.0/24,
 ovh,199.168.192.0/24,
 ovh,199.168.193.0/24,
+ovh,199.168.194.0/24,
 ovh,199.193.138.0/24,
 ovh,199.195.140.0/23,
 ovh,202.2.60.0/22,
